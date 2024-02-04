@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+    File: index.html
+    Jason Downing
+    Contact: jason@downing.io
+    MIT Licensed - see http://opensource.org/licenses/MIT for details.
+    Anyone may freely use this code. Just don't sue me if it breaks stuff.
+    Created: June 19, 2017
+    Last Updated: November 15th, 2020
+
+    This code is originally from: https://github.com/JasonD94/jasond94.github.io
+    Which itself is based on
+    the Creative Start Bootstrap theme: https://startbootstrap.com/template-overviews/creative/
+
+    This web-page is an album of epic Skiing photos that I have taken in the last few years.
+    The photos will be pulled in from a Google Photos album.
+  -->
+
+  <!-- Custom Title Bar -->
+  <title>Dragon Fruit</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- Custom Fonts -->
+  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+  rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="css/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS -->
+  <link href="css/creative.min.css" rel="stylesheet">
+
+  <!-- Index CSS -->
+  <link href="css/index.css" rel="stylesheet">
+
+  <!-- Custom favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- Google Analytics Tracking Tag. Track how people access my site and such. -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-68657454-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+<body id="page-top">
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+        data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll" href="https://jennysmith888.github.io/">Jenny Smith</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="page-scroll" href="#page-top">Home</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">Dragon Fruit</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!--  Intro Section  -->
+  <header>
+    <div class="header-content">
+      <div class="header-content-inner">
+        <h1 id="homeHeading" class="text-header">
+					<span>Dragon Fruit</span>
+			  </h1>
+        <hr>
+        <p class="text-header-p">I picked up my first dragon fruit plant on a whim back in August 2020 from a local Home Depot. After years of failure to get fruits, I finally cross-pollinated my plant with pollen from another hobbyist. Cross-pollination is quite the ordeal because the flowers only open for one night (sometimes not opening until quite late!) and the pollen does not remain viable for long after harvesting. Finally in 2022 my efforts paid off and I was rewarded with my first fruits. I was hooked! I now am growing 5 different varieties and hope to hybridize my own species one day.</p>
+        <a href="#about" class="btn btn-primary btn-xl page-scroll">View the Photos</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Skiing Photos will go here -->
+  <section class="min-padding bg-primary" id="about">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Dragon Fruit</h2>
+          <hr class="light">
+        </div>
+      </div>
+
+      <div class="row">
+        <!--
+               Photo Album
+
+               Using nanogalley2: https://github.com/nanostudio-org/nanogallery2
+               Info: http://nanogallery2.nanostudio.org/index.html
+
+               Decided to store them locally on GitHub in git. Turns out there is no real Google Photos API,
+               and only an old Google+ / Pisca Web Albums API which seems pretty bad to use. Maybe Flickr could
+               work, since nanogalley2 also supports it. For now, a basic album works with 6 photos total.
+
+               Need to experiment more with this library and see what else it can do.
+         -->
+        <div class="col-lg-12 text-center">
+          <div id="nanogallery2" data-nanogallery2='{
+            <!-- Gallery Settings -->
+            "thumbnailWidth": 400,
+            "thumbnailHeight": 400
+          }'>
+
+						<!-- Killington 3/7/2020 - the LAST ski trip of 2020... -->
+						<a href="img/album/big_df.jpg"
+						   data-ngthumb="img/album/big_df.jpg">
+							 Large Dragon Fruit Growing on Balcony</a>
+							 
+						<!-- Sunday Rivier 2/8/2020 -->
+					  <a href="img/album/grow_balc.jpg"
+						   data-ngthumb="img/album/grow_balc.jpg">Neighbor's View</a>
+
+						<!-- Pico Mountain 2/1/2020 -->
+						<a href="img/album/picked.jpg"
+						   data-ngthumb="img/album/picked.jpg">Picked at Peak Ripeness</a>
+							 
+						<a href="img/album/cracked.jpg"
+						   data-ngthumb="img/album/cracked.jpg">Just a Hint of Cracking</a>
+							 
+						<!-- Killington 1/31/2020 -->
+						<a href="img/album/proud.jpg"
+						   data-ngthumb="img/album/proud.jpg">My Proudest Accomplishment</a>
+							 
+						<a href="img/album/bloom.jpg"
+						   data-ngthumb="img/album/bloom.jpg">Dragon Fruit Bloom -- One of the Biggest Flowers in the World!</a>
+							 
+						<!-- Bretton Woods 1/26/2020 -->
+					  <a href="img/album/costarican.jpg"
+						   data-ngthumb="img/album/costarican.jpg">New Costa Rican Variety in Bloom</a>
+							
+						<!-- Waterville Valley 1/24/2020 -->
+					  <a href="img/album/night_bloom.jpg"
+						   data-ngthumb="img/album/night_bloom.jpg">Night Bloom</a>
+							 
+						<!-- Burke Mountain 1/20/2020 -->
+					  <a href="img/album/triple_bloom.jpg"
+						   data-ngthumb="img/album/triple_bloom.jpg">Triple Bloom</a>
+						
+						<!-- Wildcat Mountain 1/4/2020 -->
+						<a href="img/album/moorpark.jpg"
+							 data-ngthumb="img/album/moorpark.jpg">Tasting in the Field at Moorpark Dragon Fruit Farm</a>
+						
+						<!-- Attitrash 1/2/2020 -->
+						<a href="img/album/palora.jpg"
+							 data-ngthumb="img/album/palora.jpg">Ecuadora Palora Grown From Seed</a> 
+						<a href="img/album/graft.jpg"
+							 data-ngthumb="img/album/graft.jpg">Successful Cleft Graft</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="min-padding" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading">
+            Contact <a href="mailto:jennifer_smith[AT]ucsb.edu" class="text-blue">Jenny</a></h2>
+          <hr class="primary">
+          <p>Interested in learning more? Check out my favorite dragon fruit Instagram.</p>
+        </div>
+        <div class="col-xs-4 col-lg-2 col-lg-offset-3 text-center">
+        </div>
+        <div class="col-xs-4 col-lg-2 text-center">
+          <a href="https://www.instagram.com/graftingdragonfruit/?hl=en">
+            <i class="fa fa-instagram fa-5x sr-icons"></i>
+          </a>
+          <p><a href="https://www.instagram.com/graftingdragonfruit/?hl=en" class="text-blue">Grafting Dragon Fruit  on Instagram</a></p>
+        </div>
+        <div class="col-xs-4 col-lg-2 text-center">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  THIS IS THE FOOTER - displays a copyright notice and
+        that Bootstrap powers this web page. -->
+  <div class="container">
+    <p class="text-center text-muted text-small">
+      Adapted from Jason Downing.
+      Powered by <a href="http://www.getbootstrap.com/" class="text-blue">Bootstrap</a>.
+      Source on <a href="https://github.com/JasonD94/jasond94.github.io" class="text-blue">GitHub</a>.
+      Theme based on the
+      <a href="http://startbootstrap.com/template-overviews/creative/" class="text-blue">Creative Bootstrap Theme</a>
+      by <a href="http://startbootstrap.com/" class="text-blue">Start Bootstrap</a>.
+    </p>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript (for the GitHub links) -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/creative.min.js"></script>
+
+  <!-- nanogallery2 -->
+  <link href="css/nanogallery2.min.css" rel="stylesheet">
+  <script src="js/jquery.nanogallery2.min.js"></script>
+</body>
+</html>
