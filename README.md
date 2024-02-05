@@ -1,3 +1,3 @@
-# Dragon Fruit
-[Pictures of dragon fruit](https://jennysmith888.github.io/dragonfruit/).
+# Cosmo
+[Pictures of my dog Cosmo](https://JennySmith888.github.io/doggo/).
 
